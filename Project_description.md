@@ -3,7 +3,7 @@
 ## **Overview**
 A machine learning project for **health index prediction** using **Colab notebooks** and a **Streamlit-based web app**. The model analyzes health-related features to provide insights and predictions.
 
-This project predicts the **Health Index Score** of a country for a specific **disease** in a given **year**. The dataset includes **20 countries**, **20 diseases**, and data from **2020 to 2024**, covering key healthcare, socio-economic, and disease-related factors.
+This project predicts the **Health Index Score** of a country for a specific **disease** in a given **year**. The dataset includes **20 countries**, **20 diseases**, and data from **2000 to 2024**, covering key healthcare, socio-economic, and disease-related factors.
 
 ## **Dataset Details**
 The dataset includes the following features:
