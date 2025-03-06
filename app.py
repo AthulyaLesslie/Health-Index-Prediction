@@ -109,16 +109,21 @@ if st.sidebar.button("🔍 Predict Health Index Score"):
         mortality_rate = float(mortality_rate)
         recovery_rate = float(recovery_rate)
 
-        country_ohe = ohe_c.transform([[country]])[0]
-        disease_name_ohe = ohe_dn.transform([[disease_name]])[0]
-        disease_category_ohe = ohe_dc.transform([[disease_category]])[0]
-        treatment_type_ohe = ohe_tt.transform([[treatment_type]])[0]
+        df_country = pd.DataFrame({'Country': [country]})
+        df_disease_name = pd.DataFrame({'Disease Name': [disease_name]})
+        df_disease_category = pd.DataFrame({'Disease Category': [disease_category]})
+        df_treatment_type = pd.DataFrame({'Treatment Type': [treatment_type]})
+
+        country_ohe = ohe_c.transform(df_country)
+        disease_name_ohe = ohe_dn.transform(df_disease_name)
+        disease_category_ohe = ohe_dc.transform(df_disease_category)
+        treatment_type_ohe = ohe_tt.transform(df_treatment_type)
 
         features = np.array([
-            year, healthcare_access,
-            avg_treatment_cost, prevalence_rate,
-            incidence_rate, mortality_rate, recovery_rate,
-            *country_ohe, *disease_name_ohe, *disease_category_ohe, *treatment_type_ohe
+            year, healthcare_access, avg_treatment_cost, prevalence_rate, 
+            incidence_rate, mortality_rate, recovery_rate, 
+            *country_ohe.flatten(), *disease_name_ohe.flatten(), 
+            *disease_category_ohe.flatten(), *treatment_type_ohe.flatten()
         ]).reshape(1, -1)
 
         df_input = pd.DataFrame(features, columns=feature_order)
