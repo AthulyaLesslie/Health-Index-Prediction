@@ -57,7 +57,7 @@ The model was trained and evaluated using multiple algorithms:
 - ✅ **AdaBoost (for both Linear Regression & Decision Tree)**  
 - ✅ **Support Vector Machine (SVM)**
 
-## **Best Model**:
+## **Best Model**
 Hyperparameter tuning for Decision Tree using GridSearchCV achieved 93% accuracy, making it the best-performing model.
 
 ## **Deployment**
