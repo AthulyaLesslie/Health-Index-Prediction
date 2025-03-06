@@ -4,16 +4,16 @@ A machine learning project for health index prediction using Colab notebooks and
 This project predicts the Health Index Score of a country for a specific disease in a given year using machine learning. The dataset consists of health-related factors for 20 countries, covering 20 diseases from 2020 to 2024. The model is trained to analyze various healthcare, socio-economic, and disease-related features to provide insights.
 
 The dataset includes the following features:
--Year, Country, Disease Name, Disease Category
--Most Affected Age, Population Affected, Healthcare Access (%)
--Treatment Type, Average Treatment Cost (USD), Availability of Vaccines/Treatment
--Education Index, Prevalence Rate (%), Incidence Rate (%), Mortality Rate (%), Recovery Rate (%)
--Target Variable: Health Index Score
+Year, Country, Disease Name, Disease Category,
+Most Affected Age, Population Affected, Healthcare Access (%),
+Treatment Type, Average Treatment Cost (USD), Availability of Vaccines/Treatment,
+Education Index, Prevalence Rate (%), Incidence Rate (%), Mortality Rate (%), Recovery Rate (%),
+and Target Variable as Health Index Score
 
 Data Preprocessing:
--Handled missing values, duplicates, and irrelevant features
--Applied One-Hot Encoding and Label Encoding
--Split data into training and test sets
+Handled missing values, duplicates, and irrelevant features,
+Applied One-Hot Encoding and Label Encoding,
+Split data into training and test sets
 
 Machine Learning Models Used:
 The model was trained and evaluated using multiple algorithms:
