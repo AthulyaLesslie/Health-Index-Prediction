@@ -1,9 +1,9 @@
 # **Health Index Prediction**
 
 ## **Overview**
-A machine learning project for **health index prediction** using **Colab notebooks** and a **Streamlit-based web app**. The model analyzes health-related features to provide insights and predictions.
+A machine learning project for health index prediction using a data-driven approach. The model analyzes health-related features to provide insights and predictions.
 
-This project predicts the **Health Index Score** of a country for a specific **disease** in a given **year**. The dataset includes **20 countries**, **20 diseases**, and data from **2000 to 2024**, covering key healthcare, socio-economic, and disease-related factors.
+This project predicts the Health Index Score of a country for a specific disease in a given year. The dataset includes 20 countries, 20 diseases, and data from 2000 to 2024, covering key healthcare, socio-economic, and disease-related factors.
 
 ## **Dataset Details**
 The dataset includes the following features:
@@ -55,7 +55,10 @@ The model was trained and evaluated using multiple algorithms:
 - ✅ **Random Forest Regressor & Hyperparameter-Tuned Random Forest**  
 - ✅ **Linear Regression**  
 - ✅ **AdaBoost (for both Linear Regression & Decision Tree)**  
-- ✅ **Support Vector Machine (SVM)**  
+- ✅ **Support Vector Machine (SVM)**
+
+## **Best Model**:
+Hyperparameter tuning for Decision Tree using GridSearchCV achieved 93% accuracy, making it the best-performing model.
 
 ## **Deployment**
 - The trained model was saved and integrated into a **Streamlit web application** for easy predictions.  
