@@ -1,6 +1,8 @@
 # Health-Index-Prediction
 A machine learning project for health index prediction using Colab notebooks and a Streamlit-based web app.  Analyzes health-related features to provide insights and predictions.
+
 This project predicts the Health Index Score of a country for a specific disease in a given year using machine learning. The dataset consists of health-related factors for 20 countries, covering 20 diseases from 2020 to 2024. The model is trained to analyze various healthcare, socio-economic, and disease-related features to provide insights.
+
 The dataset includes the following features:
 -Year, Country, Disease Name, Disease Category
 -Most Affected Age, Population Affected, Healthcare Access (%)
